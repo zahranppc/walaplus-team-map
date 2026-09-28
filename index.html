@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WalaPlus Marketing Team Map</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#F8F8F0; --dot:#DCDCD3; --surface:#FFFFFF; --ink:#111111; --ink-2:#3a3a38; --muted:#6b6b67; --border:#E2E2DB;
+  --root-bg:#111111; --root-fg:#F8F8F0; --root-accent:#00FFA8;
+  --c1:#0B6359; --c1s:#DDF6EC; --c2:#8D63F1; --c2s:#EEE7FD; --c3:#E0218F; --c3s:#FCE3F1;
+  --c4:#E4540F; --c4s:#FFE9DD; --c5:#1F6FD1; --c5s:#E1ECFA; --c6:#8A6A00; --c6s:#F7EDC8; --c7:#111111; --c7s:#ECECE5;
+  --shadow:0 1px 2px rgba(17,17,17,.05),0 8px 24px -12px rgba(17,17,17,.18);
+  --font:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#0f0f0f; --dot:#262624; --surface:#1a1a19; --ink:#F2F2EA; --ink-2:#d0d0c8; --muted:#9B9B97; --border:#2e2e2c;
+  --root-bg:#00FFA8; --root-fg:#072928; --root-accent:#072928;
+  --c1:#3fe0a8; --c1s:#113a30; --c2:#B091F5; --c2s:#2c2442; --c3:#F470C0; --c3s:#3d1a2e;
+  --c4:#FF9462; --c4s:#3d2417; --c5:#7fb2f5; --c5s:#17283f; --c6:#E6C45A; --c6s:#352c10; --c7:#F2F2EA; --c7s:#2a2a28;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0f0f0f; --dot:#262624; --surface:#1a1a19; --ink:#F2F2EA; --ink-2:#d0d0c8; --muted:#9B9B97; --border:#2e2e2c;
+  --root-bg:#00FFA8; --root-fg:#072928; --root-accent:#072928;
+  --c1:#3fe0a8; --c1s:#113a30; --c2:#B091F5; --c2s:#2c2442; --c3:#F470C0; --c3s:#3d1a2e;
+  --c4:#FF9462; --c4s:#3d2417; --c5:#7fb2f5; --c5s:#17283f; --c6:#E6C45A; --c6s:#352c10; --c7:#F2F2EA; --c7s:#2a2a28;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+}
+body{background:var(--bg);background-image:radial-gradient(var(--dot) 1px,transparent 1.2px);background-size:22px 22px;color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.45;margin:0}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:24px;padding-block:36px 56px}
+header{text-align:center;margin-bottom:36px}
+.eyebrow{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.03em;margin:6px 0 8px;text-wrap:balance}
+h1 .mark{background:linear-gradient(transparent 62%,var(--c1s) 62%);padding-inline:4px}
+.meta{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+.pill{font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-variant-numeric:tabular-nums}
+
+.map{position:relative;display:grid;grid-template-columns:1fr minmax(220px,260px) 1fr;gap:28px 72px;align-items:center}
+.map svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.col{display:flex;flex-direction:column;gap:22px;position:relative;z-index:1}
+.center{position:relative;z-index:1}
+
+.root{background:var(--root-bg);color:var(--root-fg);border-radius:22px;padding:22px 22px 18px;box-shadow:var(--shadow);text-align:center}
+.root .av{margin:0 auto 10px;width:58px;height:58px;font-size:20px;background:var(--root-accent);color:var(--root-bg)}
+.root .nm{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.root .rl{font-size:13px;opacity:.75;margin-bottom:14px}
+.root ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;text-align:left}
+.root li{display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:600;padding:7px 10px;border-radius:10px;background:color-mix(in srgb,var(--root-fg) 9%,transparent)}
+.root li .ty{color:inherit;opacity:.7}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.card .hd{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--cs)}
+.av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;background:var(--cc);color:var(--surface);letter-spacing:.02em}
+.hd .nm{font-weight:800;font-size:15.5px;letter-spacing:-.01em}
+.hd .rl{font-size:12.5px;color:var(--ink-2);font-weight:600}
+.card ul{list-style:none;margin:0;padding:8px 14px 12px;display:flex;flex-direction:column}
+.card li{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed var(--border);font-weight:600;font-size:13.5px}
+.card li:last-child{border-bottom:0}
+.ty{flex:none;font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.03em;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.ty::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--tc,var(--muted))}
+
+.members{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:4px 14px 14px}
+.mem{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:12px;background:var(--bg);border:1px solid var(--border)}
+.mem .av{width:30px;height:30px;font-size:11px}
+.mem b{display:block;font-size:13px}
+.mem small{display:block;font-size:11.5px;color:var(--muted);font-weight:600;line-height:1.3}
+.sub{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:6px 14px 6px}
+
+.legend{margin-top:40px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.legend .pill{display:inline-flex;align-items:center;gap:8px}
+.legend .pill .ty{color:var(--ink);font-size:12.5px}
+.legend b{font-variant-numeric:tabular-nums}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:22px}
+
+@media (max-width:980px){
+  .map{grid-template-columns:1fr;gap:18px}
+  .map svg{display:none}
+  .center{order:-1;max-width:420px;width:100%;margin:0 auto}
+  .col{gap:18px}
+}
+@media (max-width:480px){.wrap{padding-inline:16px}}
+</style>
+</head><body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">WalaPlus · WalaOne · Marketing department</div>
+    <h1>The <span class="mark">marketing team</span> and who owns what</h1>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="map" id="map">
+    <svg id="wires" aria-hidden="true"></svg>
+    <div class="col" id="left"></div>
+    <div class="center" id="center"></div>
+    <div class="col" id="right"></div>
+  </div>
+
+  <div class="legend" id="legend"></div>
+  <footer>Team structure as of September 2026</footer>
+</div>
+
+<script>
+// type -> colour token
+const TYPE = {Management:"--c7",Finance:"--c6",Operations:"--c6",Reporting:"--c6",Content:"--c3",Creative:"--c3",
+  Merchandising:"--c4",CRM:"--c4",Performance:"--c5",Growth:"--c1",B2B:"--c1",Brand:"--c2",Partnerships:"--c2",
+  "Social media":"--c2",Design:"--c7",Video:"--c7"};
+const ROOT = {name:"Zahran",role:"Head of Marketing",tasks:[["Marketing strategy","Management"],["Team leadership","Management"],["Budget","Finance"]]};
+const LEFT = [
+  {name:"Marwa",role:"Marketing Coordinator",c:"c6",tasks:[["Department requests, brief to delivery","Operations"],["Marketing invoicing","Finance"],["Content writing cover","Content"],["Merchandising cover","Merchandising"]]},
+  {name:"Atheer",role:"Senior Creative Specialist",c:"c3",tasks:[["Marketplace campaign copy (3 apps)","Content"],["WalaPlus brand campaign ideas","Creative"]]},
+  {name:"Rawi",role:"WalaOne Marketing Team Leader",c:"c2",tasks:[["WalaOne brand marketing","Brand"],["Partners marketing","Partnerships"],["WalaOne social media","Social media"]]},
+  {name:"Mohamed Fouad",role:"Performance Marketing",c:"c5",tasks:[["Performance marketing","Performance"],["CRM","CRM"]]}
+];
+const RIGHT = [
+  {name:"Maria",role:"Merchandising Specialist",c:"c4",tasks:[["Marketplace campaigns (~300/month)","Merchandising"],["Slot allocation","Merchandising"],["Content and design follow-up","Operations"],["Publishing on CRM and social","CRM"],["Weekly home page offers and carousels","Merchandising"]]},
+  {name:"Mohamed Qassem",role:"WalaPlus Growth",c:"c1",tasks:[["WalaPlus growth","Growth"],["B2B marketing","B2B"],["B2B reports","Reporting"]]},
+  {name:"Nabil",role:"Art Director · Art team",c:"c7",tasks:[["Art direction","Design"],["Campaign designs","Design"],["Video and motion graphics","Video"]],members:[
+    {name:"Wael",role:"Senior Designer"},{name:"Ramadan",role:"Senior Designer"},{name:"Hashash",role:"Designer"},
+    {name:"Geizery",role:"Designer"},{name:"Megawer",role:"Video Editor & Motion"}]}
+];
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ini = n => n.split(" ").map(w=>w[0]).join("").slice(0,2).toUpperCase();
+const ty = t => `<span class="ty" style="--tc:var(${TYPE[t]})">${t}</span>`;
+const rows = ts => ts.map(([t,k]) => `<li><span>${esc(t)}</span>${ty(k)}</li>`).join("");
+const card = p => `<article class="card" style="--cc:var(--${p.c});--cs:var(--${p.c}s)" data-c="${p.c}">
+  <div class="hd"><div class="av">${ini(p.name)}</div><div><div class="nm">${esc(p.name)}</div><div class="rl">${esc(p.role)}</div></div></div>
+  <ul>${rows(p.tasks)}</ul>
+  ${p.members ? `<div class="sub">Art team</div><div class="members">${p.members.map(m=>`<div class="mem"><div class="av">${ini(m.name)}</div><div><b>${esc(m.name)}</b><small>${esc(m.role)}</small></div></div>`).join("")}</div>` : ""}
+</article>`;
+
+document.getElementById("left").innerHTML = LEFT.map(card).join("");
+document.getElementById("right").innerHTML = RIGHT.map(card).join("");
+document.getElementById("center").innerHTML = `<div class="root" id="root"><div class="av">${ini(ROOT.name)}</div><div class="nm">${ROOT.name}</div><div class="rl">${ROOT.role}</div><ul>${ROOT.tasks.map(([t,k])=>`<li><span>${t}</span><span class="ty">${k}</span></li>`).join("")}</ul></div>`;
+
+const all = [ROOT, ...LEFT, ...RIGHT];
+const people = 1 + LEFT.length + RIGHT.length + RIGHT[2].members.length;
+const counts = {};
+all.forEach(p => p.tasks.forEach(([,k]) => counts[k] = (counts[k]||0) + 1));
+const total = Object.values(counts).reduce((a,b)=>a+b,0);
+document.getElementById("meta").innerHTML = `<span class="pill">${people} people</span><span class="pill">${LEFT.length+RIGHT.length} direct reports</span><span class="pill">${total} main tasks</span>`;
+document.getElementById("legend").innerHTML = Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([k,n]) => `<span class="pill">${ty(k)}<b>${n}</b></span>`).join("");
+
+// curved connectors from the root card to every branch card
+function wire(){
+  const map = document.getElementById("map"), svg = document.getElementById("wires");
+  if (getComputedStyle(svg).display === "none") return;
+  const M = map.getBoundingClientRect(), R = document.getElementById("root").getBoundingClientRect();
+  svg.innerHTML = [...map.querySelectorAll(".card")].map(el => {
+    const r = el.getBoundingClientRect(), left = r.right < R.left;
+    const x1 = (left ? R.left : R.right) - M.left, y1 = R.top + R.height/2 - M.top;
+    const x2 = (left ? r.right : r.left) - M.left, y2 = r.top + Math.min(r.height/2, 34) - M.top;
+    const mx = (x1 + x2) / 2;
+    return `<path d="M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}" fill="none" stroke="var(--${el.dataset.c})" stroke-width="2.25" stroke-linecap="round" opacity=".7"/>
+            <circle cx="${x2}" cy="${y2}" r="4.5" fill="var(--${el.dataset.c})"/>`;
+  }).join("");
+}
+wire();
+new ResizeObserver(wire).observe(document.getElementById("map"));
+document.fonts && document.fonts.ready.then(wire);
+</script>
+</body></html>
